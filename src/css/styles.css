@@ -6,7 +6,7 @@
 */
 @import url('./reset.css');
 @import url('./header.css');
-@import url('./vite-promo.css');
+@import url('./footer.css');
 
 :root {
   --background-dark: #11131f;
@@ -18,14 +18,14 @@
   );
   --background-milk: #f6f5ef;
 }
+html,
 body {
-  font-family: 'DM Sans', sans-serif;
   background-color: var(--background-dark);
   color: var(--background-milk);
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  margin: 0;
+  height: 100%;
 }
 img {
   display: block;
@@ -53,4 +53,14 @@ p {
 .container {
   max-width: 320px;
   margin: 0 auto;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+main {
+  /* flex: 1 0 auto; */
+  flex-grow: 1;
 }
