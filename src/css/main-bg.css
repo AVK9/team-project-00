@@ -1,0 +1,30 @@
+.text {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 66px */
+  letter-spacing: -2.7px;
+  background: var(
+    --linear-green,
+    linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: DM Sans;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -2.7px;
+}
+.main-bg {
+  background-image: url(../img/bg-big-design.svg);
+  max-width: 1722px;
+  min-height: 1590px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+}
