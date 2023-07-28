@@ -11,13 +11,11 @@
   height: 68px;
   border-radius: 8px;
 }
-.button-button {
-  background-color: var(--background-silver);
-  fill: #fff;
+.arrow-up {
+  display: block;
+  margin: 20px auto;
 }
-.but-arrow {
-  fill: #fff;
-}
+
 .go-top:hover {
   /* color: rgba(0, 51, 153, 0.8);
   border: 1px solid rgba(0, 51, 153, 0.8); */
