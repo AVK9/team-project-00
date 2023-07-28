@@ -1,0 +1,29 @@
+.go-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+  display: none;
+  /* color: rgba(0, 51, 153, 0.5);
+  border: 1px solid rgba(0, 51, 153, 0.5); */
+  background-color: var(--background-silver);
+  width: 68px;
+  height: 68px;
+  border-radius: 8px;
+}
+.button-button {
+  background-color: var(--background-silver);
+  fill: #fff;
+}
+.but-arrow {
+  fill: #fff;
+}
+.go-top:hover {
+  /* color: rgba(0, 51, 153, 0.8);
+  border: 1px solid rgba(0, 51, 153, 0.8); */
+  background-color: var(background-hover);
+}
+
+.go-top--show {
+  display: block;
+}

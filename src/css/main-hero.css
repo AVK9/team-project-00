@@ -1,6 +1,16 @@
 .main-hero-banner-bg {
+  position: relative;
   width: 335px;
   height: 427px;
   background: linear-gradient(to right, #bec7c2, #a1b5ba);
   border-radius: 24px;
+}
+.main-hero-banner-zub {
+  position: absolute;
+  width: 150px;
+  height: 25px;
+  background: #fff;
+  border-radius: 0px 24px 0px 24px;
+  /* bottom: 0px;
+  right: 2px; */
 }
