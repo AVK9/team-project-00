@@ -1,8 +1,12 @@
 .section-rent {
   min-width: 300px;
   margin: 0 auto;
+  position: relative;
 }
-
+.head-section-rent {
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
 .head-section {
   color: #f6f5ef;
   font-size: 36px;
@@ -13,6 +17,7 @@
   margin-bottom: 16px;
 }
 .img-rent-yacht {
+  margin: 0 auto;
 }
 .modal-box {
 }
@@ -76,6 +81,7 @@
 }
 .btn-push-modal {
   margin-top: 24px;
+  margin-left: 20px;
   background-color: transparent;
   display: flex;
   padding: 14px 28px;
@@ -88,4 +94,17 @@
 }
 .btn-push-modal-icon {
   fill: var(--main-font-color);
+}
+.ellipse-section-rent-7275 {
+  position: absolute;
+  width: 283px;
+  height: 283px;
+  bottom: -80px;
+  left: 220px;
+  transform: rotate(-45deg);
+  flex-shrink: 0;
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #91afba;
+  filter: blur(100px);
 }

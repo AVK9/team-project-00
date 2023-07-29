@@ -1,0 +1,27 @@
+.cection-services {
+  min-width: 300px;
+  margin: 0 auto;
+}
+.div-img-servises {
+  position: relative;
+}
+.but-servises {
+  min-width: 95px;
+  display: inline-flex;
+  padding: 14px 28px;
+  align-items: flex-start;
+  border: 0;
+  gap: 10px;
+  border-radius: 60px;
+  background: var(--white, #f6f5ef);
+  z-index: 999;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+.cection-services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 80px;
+}
