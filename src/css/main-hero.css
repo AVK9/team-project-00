@@ -14,3 +14,56 @@
   /* bottom: 0px;
   right: 2px; */
 }
+
+.ramka {
+  position: relative;
+  width: 570px;
+  height: 522px;
+  border: #bec7c2 4px solid;
+  border-radius: 40px;
+  box-shadow: #bec7c2;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ellipse-7268 {
+  position: absolute;
+  top: 66px;
+  right: 152px;
+
+  width: 265px;
+  height: 265px;
+  flex-shrink: 0;
+  border-radius: 265px;
+  opacity: 0.6;
+  background: #91afba;
+  filter: blur(100px);
+}
+.img-yaht {
+  margin-top: 97px;
+  max-width: 338px;
+  height: 198px;
+  z-index: 9999;
+}
+.zag-thank {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -1.44px;
+  color: #fff;
+}
+.mod-text {
+  margin-top: 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: -0.32px;
+  color: #fff;
+}
+.text-yaht {
+  max-width: 442px;
+}

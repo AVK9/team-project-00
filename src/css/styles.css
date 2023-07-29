@@ -13,14 +13,15 @@
 :root {
   --background-dark: #11131f;
   --background-grafit: #1f212d;
-  --background-silver: #93abae;
-  --background-hover: #88b3b9;
+  --button-lightgreen-color: #93abae;
+  --button-lightgreen-hover: #88b3b9;
   --linear-green: #bec7c2;
   --background-grad: var(
     --linear-green,
     linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%)
   );
-  --background-milk: #f6f5ef;
+  --main-font-color: rgba(246, 245, 239, 1);
+  --accent-color: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
 }
 html,
 body {
