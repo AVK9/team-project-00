@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/DMSans-Regular.woff2) format('woff2'),
+    url(../fonts/DMSans-Regular.woff) format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/DMSans-Medium.woff2) format('woff2'),
+    url(../fonts/DMSans-Medium.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-style: italic;
+  src: url(../fonts/DMSans-MediumItalic.woff2) format('woff2'),
+    url(../fonts/DMSans-MediumItalic.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/DMSans-Bold.woff2) format('woff2'),
+    url(../fonts/DMSans-Bold.woff) format('woff');
+  font-display: swap;
+}
+
+:root {
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%; */
+
+  --main-background-color: rgba(17, 19, 31, 1);
+  --secondary-background-color: rgba(31, 33, 45, 1);
+  --main-font-color: rgba(246, 245, 239, 1);
+  --accent-color: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+  --button-lightgreen-color: rgba(147, 171, 174, 1);
+  --button-lightgreen-hover: rgba(136, 179, 185, 1);
+  --linear-green: #bec7c2;
+  --background-grad: var(
+    --linear-green,
+    linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%)
+  );
+}
+html,
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--main-font-color);
+  background-color: var(--main-background-color);
+  height: 100%;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+main {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Mobile base styles */
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  /* outline: 2px solid red;
+    outline-offset: -2px; */
+}
+
+/* Tablet base styles */
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* Desktop base styles */
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}

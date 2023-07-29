@@ -1,0 +1,91 @@
+.section-rent {
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.head-section {
+  color: #f6f5ef;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 39.6px */
+  letter-spacing: -1.62px;
+  margin-bottom: 16px;
+}
+.img-rent-yacht {
+}
+.modal-box {
+}
+
+.div-user-filds {
+  margin: 0 auto;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modal-form-yacht-id {
+}
+.modal-label {
+}
+.div-user-fild {
+}
+.input-user-fild {
+  color: var(--main-font-color);
+  width: 100%;
+  height: 33px;
+  border: 0;
+  border-bottom: #ffffff 1px solid;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-user-fild::placeholder,
+.input-user-textarea::placeholder {
+  color: var(--main-font-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.63px;
+  transform: translateY(-8px);
+}
+.input-user-textarea::placeholder {
+  transform: translateY(-5px);
+}
+.modal-form-id {
+}
+.div-comment {
+}
+.input-user-textarea {
+  color: #f6f5ef;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.63px;
+  width: 100%;
+  height: 75px;
+  border: 0;
+  border-bottom: #ffffff 1px solid;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-push-modal {
+  margin-top: 24px;
+  background-color: transparent;
+  display: flex;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: var(--main-font-color);
+  border-radius: 60px;
+  border: 1px solid #fff;
+}
+.btn-push-modal-icon {
+  fill: var(--main-font-color);
+}
