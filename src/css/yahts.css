@@ -1,0 +1,36 @@
+.cection-yahts {
+  min-width: 300px;
+  margin: 0 auto;
+}
+.kards-yahts {
+  width: 335px;
+  height: 469px;
+  flex-shrink: 0;
+  background: #1f212d;
+  border-radius: 30px;
+  margin-bottom: 24px;
+}
+.but-yahts-slaid {
+  height: 36px;
+  width: 46px;
+  border: #f6f5ef 1px solid;
+  border-radius: 60px;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cection-services-list {
+  display: flex;
+  flex-direction: column;
+}
+.but-yahts-ar {
+  fill: #f6f5ef;
+}
+.button-yahts-slid {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 80px;
+}
