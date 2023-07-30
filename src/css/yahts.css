@@ -1,14 +1,71 @@
-.cection-yahts {
+.box-yahts {
   min-width: 300px;
   margin: 0 auto;
 }
 .kards-yahts {
-  width: 335px;
+  max-width: 300px;
   height: 469px;
   flex-shrink: 0;
   background: #1f212d;
   border-radius: 30px;
   margin-bottom: 24px;
+  color: #f6f5ef;
+  margin-left: 10px;
+}
+.foto-yaht {
+  transform: translateY(10px);
+  margin: 0 auto;
+}
+.head-yaht {
+  color: #f6f5ef;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+.head2-yaht {
+  color: #f6f5ef;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 14.16px */
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+.head-yaht-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-center;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 24px;
+}
+.desk-yaht {
+  display: flex;
+  gap: 32px;
+
+  align-items: flex-center;
+  margin-left: 24px;
+
+  margin-top: 24px;
+}
+.head-desk-yaht {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 16.52px */
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.znach-desk-yaht {
+  color: #f6f5ef;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 16.52px */
+  letter-spacing: 0.42px;
 }
 .but-yahts-slaid {
   height: 36px;
@@ -21,10 +78,7 @@
   justify-content: center;
   align-items: center;
 }
-.cection-services-list {
-  display: flex;
-  flex-direction: column;
-}
+
 .but-yahts-ar {
   fill: #f6f5ef;
 }
@@ -33,4 +87,42 @@
   gap: 14px;
   justify-content: center;
   margin-bottom: 80px;
+}
+.swiper {
+  width: 320px;
+  height: 600px;
+  background-color: transparent;
+  margin-bottom: 17px;
+}
+.swiper-slide {
+}
+.swiper-button-next,
+.swiper-button-prev {
+  height: 36px;
+  width: 46px;
+  border: #f6f5ef 1px solid;
+  border-radius: 60px;
+  background-color: transparent;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  transform: translateY(220px);
+  margin-left: 95px;
+  margin-right: 95px;
+}
+.swiper-backface-hidden .swiper-slide {
+  /* background-color: rgb(231, 130, 130); */
+}
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 18px;
+  height: 8px;
 }
