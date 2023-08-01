@@ -91,9 +91,6 @@
 }
 
 @media only screen and (min-width: 375px) {
-  .container {
-    min-width: 335px;
-  }
   .ellipse-footer7268 {
     position: absolute;
     width: 420px;
@@ -110,9 +107,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    min-width: 704px;
-  }
   .footer-menu {
     display: flex;
     align-items: flex-start;
@@ -160,9 +154,6 @@
   }
 }
 @media only screen and (min-width: 1280px) {
-  .container {
-    min-width: 1216px;
-  }
   .footer-text-box {
     gap: 32px;
     margin-top: 132px;

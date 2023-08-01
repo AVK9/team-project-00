@@ -1,0 +1,245 @@
+.box-yahts {
+  /* min-width: 300px;
+  margin: 0 auto; */
+}
+.kards-yahts {
+  min-width: 354px;
+  height: 508px;
+  flex-shrink: 0;
+  background: #1f212d;
+  border-radius: 30px;
+  margin-bottom: 24px;
+  color: #f6f5ef;
+  margin: 0;
+}
+.foto-yaht {
+  transform: translateY(10px);
+  margin: 0 auto;
+}
+.head-yaht {
+  color: #f6f5ef;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+.head2-yaht {
+  color: #f6f5ef;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 14.16px */
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+.head-yaht-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 24px;
+}
+.desk-yaht {
+  display: flex;
+  gap: 32px;
+
+  align-items: center;
+  margin-left: 24px;
+
+  margin-top: 24px;
+}
+.head-desk-yaht {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 16.52px */
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.znach-desk-yaht {
+  color: #f6f5ef;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 16.52px */
+  letter-spacing: 0.42px;
+}
+/* мои кнопки */
+/* .but-yahts-slaid {
+  height: 36px;
+  width: 46px;
+  border: #f6f5ef 1px solid;
+  border-radius: 60px;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.but-yahts-ar {
+  fill: #f6f5ef;
+}
+.button-yahts-slid {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+/* начался слайдер */
+/* .swiper {
+  width: 320px;
+  height: 600px;
+  background-color: transparent;
+  margin-bottom: 17px;
+}
+.swiper-slide {
+}
+.swiper-button-next,
+.swiper-button-prev {
+  height: 36px;
+  width: 46px;
+  border: #f6f5ef 1px solid;
+  border-radius: 60px;
+  background-color: transparent;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+/*}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  transform: translateY(220px);
+  margin-left: 95px;
+  margin-right: 95px;
+}
+.swiper-backface-hidden .swiper-slide {
+  background-color: rgb(231, 130, 130);
+}
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 18px;
+  height: 8px;
+} */
+
+/* слайдер */
+html,
+body {
+  /* position: relative;
+  height: 100%; */
+}
+
+body {
+  /* background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0; */
+}
+
+swiper-container {
+  /* width: 354px;
+  height: 508px; */
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ce8686;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+swiper-slide img {
+  display: block;
+  /* object-fit: cover; */
+}
+
+swiper-container {
+  width: 300px;
+  height: 508px;
+  margin: 164px auto;
+}
+
+/* .append-buttons {
+  text-align: center;
+  margin-top: 20px;
+} */
+
+/* .append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #8b19c0;
+  color: #22e663;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+} */
+/* моя адаптация*/
+.element.style {
+  min-width: 354px;
+  margin-right: 16px;
+}
+:root {
+  --swiper-navigation-size: 10px;
+}
+
+.mySwiperYacht {
+  position: relative;
+}
+.swiper-button-prev element.style {
+  display: block;
+  left: 120px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  offset-position: 0;
+  position: sticky;
+  transform: translateX(22px);
+  min-height: 36px;
+  min-width: 46px;
+  border: #f6f5ef 1px solid;
+  border-radius: 60px;
+  background-color: transparent;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  color: aqua;
+}
+@media only screen and (min-width: 375px) {
+  .swiper-container {
+    width: 335px;
+    height: 508px;
+    margin: 164px auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .swiper-container {
+    width: 704px;
+    height: 508px;
+    margin: 164px auto;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .swiper-container {
+    width: 1094px;
+    height: 508px;
+    margin: 164px auto;
+  }
+}

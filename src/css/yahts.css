@@ -1,6 +1,10 @@
+.section-yahts {
+  margin-bottom: 250px;
+  padding-left: 10px;
+}
 .box-yahts {
-  min-width: 300px;
-  margin: 0 auto;
+  position: relative;
+  min-width: 320px;
 }
 .kards-yahts {
   max-width: 300px;
@@ -8,10 +12,62 @@
   flex-shrink: 0;
   background: #1f212d;
   border-radius: 30px;
-  margin-bottom: 24px;
   color: #f6f5ef;
-  margin-left: 10px;
 }
+.button-prev {
+  position: absolute;
+  bottom: -24px;
+  left: 105px;
+}
+.button-next {
+  position: absolute;
+  bottom: -24px;
+  right: 105px;
+}
+
+@media only screen and (min-width: 375px) {
+  .section-yahts {
+    padding-left: 0;
+  }
+  .box-yahts {
+    min-width: 335px;
+  }
+  .kards-yahts {
+    min-width: 335px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .box-yahts {
+    min-width: 704px;
+  }
+  .kards-yahts {
+    max-width: 344px;
+  }
+  .button-prev {
+    left: 294px;
+  }
+  .button-next {
+    right: 294px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .box-yahts {
+    width: 1094px;
+    min-width: 1094px;
+  }
+  .kards-yahts {
+    max-width: 354px;
+  }
+  .button-prev {
+    top: 236px;
+    left: -61px;
+  }
+  .button-next {
+    top: 236px;
+    right: -61px;
+  }
+}
+
 .foto-yaht {
   transform: translateY(10px);
   margin: 0 auto;
@@ -45,10 +101,8 @@
 .desk-yaht {
   display: flex;
   gap: 32px;
-
   align-items: center;
   margin-left: 24px;
-
   margin-top: 24px;
 }
 .head-desk-yaht {
@@ -74,7 +128,6 @@
   border: #f6f5ef 1px solid;
   border-radius: 60px;
   background-color: transparent;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,50 +142,24 @@
   justify-content: center;
   margin-bottom: 80px;
 }
+
 /* начался слайдер */
 .swiper {
-  width: 320px;
-  height: 600px;
+  width: 1094px;
+  height: 508px;
   background-color: transparent;
-  margin-bottom: 17px;
+  right: 0;
+  margin: 0;
 }
-.swiper-slide {
-}
-.swiper-button-next,
-.swiper-button-prev {
-  height: 36px;
-  width: 46px;
-  border: #f6f5ef 1px solid;
-  border-radius: 60px;
-  background-color: transparent;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
   display: none;
 }
-
-.swiper-button-next,
-.swiper-button-prev {
-  transform: translateY(220px);
-  margin-left: 95px;
-  margin-right: 95px;
-}
 .swiper-backface-hidden .swiper-slide {
-  background-color: rgb(231, 130, 130);
+  /* background-color: rgb(231, 130, 130); */
 }
-.swiper-button-next svg,
-.swiper-button-prev svg {
-  width: 18px;
-  height: 8px;
-}
-@media only screen and (min-width: 768px) {
-  .swiper {
-    width: 704px;
-    height: 600px;
-    background-color: transparent;
-    margin-bottom: 17px;
-  }
+
+.image-slider .swiper-slide {
+  width: auto;
 }
