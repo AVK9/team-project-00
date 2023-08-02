@@ -158,13 +158,6 @@
 .but-yahts-ar {
   fill: #f6f5ef;
 }
-.button-yahts-slid {
-  display: flex;
-  gap: 14px;
-  justify-content: center;
-  margin-bottom: 80px;
-}
-
 .image-slider .swiper-slide {
   width: auto;
 }

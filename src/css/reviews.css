@@ -1,31 +1,13 @@
-.reviews-section {
+.reviews-sectionss {
+  position: relative;
+}
+.box-rev {
+  margin: 0 auto;
+  width: 300px;
+  margin-bottom: 80px;
   margin-top: 80px;
 }
-@media only screen and (min-width: 768px) {
-  .reviews-section {
-    margin-top: 100px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .reviews-section {
-    margin-top: 164px;
-  }
-}
-
-.reviews-box {
-  margin-bottom: 40px;
-}
-
-@media only screen and (min-width: 1280px) {
-  .reviews-box {
-    display: flex;
-    justify-content: space-between;
-    display: flex;
-  }
-}
-
 .reviews-title {
-  font-family: DM Sans;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -34,41 +16,16 @@
   color: var(--main-font-color);
   margin-bottom: 24px;
 }
-
-@media only screen and (min-width: 768px) {
-  .reviews-title {
-    width: 497px;
-    margin: 0;
-    font-size: 32px;
-    line-height: 120%;
-    letter-spacing: -1.44px;
-  }
-}
-
 .reviews-page {
-  max-width: 335px;
+  color: var(--main-font-color);
+  max-width: 300px;
   font-size: 14px;
   line-height: 140%;
   letter-spacing: -0.28px;
 }
-
-@media only screen and (min-width: 768px) {
-  .reviews-page {
-    margin-top: 32px;
-    margin-left: auto;
-    width: 273px;
-    font-size: 16px;
-    line-height: 140%;
-    letter-spacing: -0.32px;
-  }
+.reviews-desc {
+  margin-bottom: 40px;
 }
-
-@media only screen and (min-width: 1280px) {
-  .reviews-page {
-    margin-top: 0;
-  }
-}
-
 .yacht-title-item {
   font-style: italic;
   background-image: var(--accent-color);
@@ -76,72 +33,19 @@
   -webkit-background-clip: text;
   color: transparent;
 }
-
-.reviews-block {
-}
-
-@media only screen and (min-width: 768px) {
-  .reviews-block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .reviews-block {
-    gap: 32px;
-  }
-}
-
 .reviews-item {
-  min-width: 335px;
+  max-width: 300px;
   height: 208px;
   padding: 24px;
   margin-bottom: 14px;
   border-radius: 24px;
   background-color: var(--secondary-background-color);
 }
-
-@media only screen and (min-width: 768px) {
-  .reviews-item {
-    margin-bottom: 32px;
-    width: 344px;
-    height: 266px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .reviews-item {
-    padding: 32px;
-    margin-bottom: 164px;
-    width: 384px;
-    height: 282px;
-  }
-}
-
-.john-item {
-}
-
 .reviews-img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 18px;
 }
-
-@media only screen and (max-width: 767.98px) {
-  .reviews-img {
-    width: 48px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .reviews-img {
-    margin-bottom: 24px;
-  }
-}
-
 .reviews-subtitle {
   text-align: center;
   font-size: 16px;
@@ -150,14 +54,6 @@
   letter-spacing: -0.72px;
   margin-bottom: 8px;
 }
-
-@media only screen and (min-width: 768px) {
-  .reviews-subtitle {
-    font-size: 18px;
-    letter-spacing: -0.81px;
-  }
-}
-
 .reviews-text {
   font-size: 12px;
   line-height: 140%;
@@ -166,39 +62,48 @@
   color: var(--main-font-color);
   width: 100%;
 }
-
-@media only screen and (max-width: 767.98px) {
-  .victoria-item {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1279.98px) {
-  .igor-item {
-    display: none;
-  }
-}
-/* buller*/
-.buller-item {
-  padding-left: 138px;
-  padding-right: 184px;
-  margin-bottom: 80px;
-}
-
-@media only screen and (min-width: 768px) {
-  .buller-item {
-    padding-left: 322px;
-    padding-right: 369px;
-    margin-bottom: 100px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .buller-item {
-    display: none;
-  }
-}
 .swiperq {
-  width: 600px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
+}
+.swiper-pagination {
+  /* max-height: 13px;
+  */
+}
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background-color: #1f212d;
+  filter: drop-shadow(2px 1px 3px rgba(24, 55, 91, 0.2));
+}
+.swiper-pagination-bullet-active {
+  width: 13px;
+  height: 13px;
+  background-color: #88b3b9;
+  border: #93abae 1px solid;
+}
+@media only screen and (min-width: 375px) {
+  .box-rev,
+  .reviews-item,
+  .swiperq {
+    max-width: 335px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .box-rev,
+  .swiperq {
+    min-width: 704px;
+  }
+  .reviews-item {
+    min-width: 344px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .box-rev,
+  .swiperq {
+    min-width: 1216px;
+  }
+  .reviews-item {
+    min-width: 384px;
+  }
 }
