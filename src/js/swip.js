@@ -2,7 +2,10 @@ const swiper = new Swiper('.swiper', {
   // Default parameters
   slidesPerView: 3,
   spaceBetween: 16,
-   loop: true,
+  loop: true,
+    autoplay: {
+   delay: 5000,
+ },
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 320px
