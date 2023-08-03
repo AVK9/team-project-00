@@ -70,6 +70,7 @@
   background-color: transparent;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
 }
 .btn-push-modal {
   margin-top: 24px;
