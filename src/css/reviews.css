@@ -7,6 +7,7 @@
   margin-bottom: 80px;
   margin-top: 80px;
 }
+
 .reviews-title {
   font-size: 24px;
   font-style: normal;
@@ -63,8 +64,10 @@
   width: 100%;
 }
 .swiperq {
-  width: 300px;
+  max-width: 704px;
   height: 250px;
+  right: 0;
+  margin: 0;
 }
 .swiper-pagination {
   /* max-height: 13px;
@@ -83,27 +86,36 @@
   border: #93abae 1px solid;
 }
 @media only screen and (min-width: 375px) {
-  .box-rev,
-  .reviews-item,
+  .box-rev {
+    min-width: 335px;
+  }
+  .reviews-item {
+    max-width: 335px;
+  }
   .swiperq {
     max-width: 335px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .box-rev,
-  .swiperq {
+  .box-rev {
     min-width: 704px;
   }
+  .swiperq,
+  .reviews-sectionss {
+    max-width: 704px;
+  }
   .reviews-item {
-    min-width: 344px;
+    max-width: 344px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .box-rev,
-  .swiperq {
+  .box-rev {
     min-width: 1216px;
   }
+  .swiperq {
+    max-width: 1216px;
+  }
   .reviews-item {
-    min-width: 384px;
+    max-width: 384px;
   }
 }

@@ -1,11 +1,19 @@
 const swiper = new Swiper('.swiperq', {
-  slidesPerView: 1,
-  spaceBetween: 16,
+  slidesPerView: 3,
+  spaceBetween: 32,
   autoplay: {
   delay: 5000,
   },
   loop: true,
-    breakpoints: {
+  breakpoints: {
+      320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    375: {
+      slidesPerView: 1,
+      spaceBetween: 20
+      },
       768: {
       slidesPerView: 2,
       spaceBetween: 16
