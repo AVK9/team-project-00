@@ -1,22 +1,254 @@
-.box-yahts {
-  /* min-width: 300px;
-  margin: 0 auto; */
+/**
+  |============================
+  | Yachts section
+  |============================
+*/
+
+.yachts {
+  /* position: relative; */
+  margin-bottom: 250px;
+  padding-left: 10px;
+  min-width: 320px;
 }
-.kards-yahts {
-  min-width: 354px;
-  height: 508px;
+
+@media only screen and (min-width: 375px) {
+  .yachts {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .yachts:before {
+    content: '';
+    position: absolute;
+    height: 1773px;
+    background-image: url(../img/yachts/background-waves.svg);
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.15;
+    background-size: 100% auto;
+  }
+}
+
+title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.box-yahts {
+  position: relative;
+  max-width: 300px;
+}
+
+@media only screen and (min-width: 375px) {
+  .box-yahts {
+    min-width: 335px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .box-yahts {
+    min-width: 704px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .box-yahts {
+    width: 1094px;
+    min-width: 1094px;
+  }
+}
+
+.yachts-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  max-width: 335px;
+  gap: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .yachts-header {
+    max-width: 640px;
+    gap: 64px;
+    margin-bottom: 100px;
+    padding-left: 25px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .yachts-header {
+    display: inline-flex;
+    max-width: 882px;
+    gap: 64px;
+    margin-bottom: 164px;
+    padding-left: 75px;
+  }
+}
+
+.text-container {
+  display: flex;
+  min-width: 310px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .text-container {
+    min-width: 641px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .text-container {
+    min-width: 882px;
+  }
+}
+
+.yachts-text {
+  color: #f6f5ef;
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1.62px;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .yachts-text {
+    font-size: 70px;
+    letter-spacing: -3.15px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .yachts-text {
+    font-size: 100px;
+    letter-spacing: -4.5px;
+  }
+}
+
+.yacht-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 153px;
+  height: 48px;
+  color: #f6f5ef;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -0.63px;
+  background-color: #11131f;
+  border-radius: 60px;
+  border: #f6f5ef 1px solid;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.yacht-button:hover,
+.yacht-button:focus {
+  background: var(--secondary-background-color);
+  color: #93abae;
+  border: 1px solid #93abae;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.button-text {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -0.63px;
+  color: #f6f5ef;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .button-text {
+    letter-spacing: -0.81px;
+    font-size: 18px;
+  }
+}
+
+.yachts-list {
+  /* display: flex;
+  flex-direction: row;
+  gap: 16px; */
+}
+
+.yacht {
+  max-width: 300px;
+  height: 469px;
   flex-shrink: 0;
   background: #1f212d;
   border-radius: 30px;
-  margin-bottom: 24px;
   color: #f6f5ef;
-  margin: 0;
 }
+
+@media only screen and (min-width: 375px) {
+  .yacht {
+    max-width: 335px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .yacht {
+    max-width: 354px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .yacht {
+    max-width: 354px;
+  }
+}
+
 .foto-yaht {
   transform: translateY(10px);
-  margin: 0 auto;
+  margin-left: 6.5px;
+  margin-right: 6.5px;
+  margin-top: 6.5px;
 }
-.head-yaht {
+
+@media only screen and (min-width: 768px) {
+  .foto-yaht {
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-top: 11px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .foto-yaht {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+  }
+}
+
+.name-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 24px;
+}
+
+.name {
   color: #f6f5ef;
   font-size: 16px;
   font-style: normal;
@@ -25,221 +257,119 @@
   letter-spacing: -0.72px;
   text-transform: uppercase;
 }
-.head2-yaht {
+
+.yacht-type {
   color: #f6f5ef;
   font-size: 12px;
+  font-family: DM Sans;
   font-style: normal;
   font-weight: 400;
   line-height: 118%; /* 14.16px */
   letter-spacing: 0.36px;
   text-transform: uppercase;
+  opacity: 0.5;
 }
-.head-yaht-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 24px;
-}
-.desk-yaht {
+
+.charact {
   display: flex;
   gap: 32px;
-
   align-items: center;
   margin-left: 24px;
-
   margin-top: 24px;
 }
-.head-desk-yaht {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 118%; /* 16.52px */
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-}
-.znach-desk-yaht {
+
+.pharagraf {
   color: #f6f5ef;
+  font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 118%; /* 16.52px */
+  line-height: 118%;
   letter-spacing: 0.42px;
 }
-/* мои кнопки */
-/* .but-yahts-slaid {
-  height: 36px;
-  width: 46px;
-  border: #f6f5ef 1px solid;
-  border-radius: 60px;
-  background-color: transparent;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.button-prev {
+  position: absolute;
+  bottom: -24px;
+  left: 105px;
 }
 
-.but-yahts-ar {
+.button-next {
+  position: absolute;
+  bottom: -24px;
+  right: 105px;
+}
+
+@media only screen and (min-width: 768px) {
+  .button-prev {
+    left: 294px;
+  }
+  .button-next {
+    right: 294px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .button-prev {
+    top: 845px;
+    left: -61px;
+  }
+  .button-next {
+    top: 845px;
+    right: -61px;
+  }
+}
+
+.arrow {
   fill: #f6f5ef;
 }
-.button-yahts-slid {
-  display: flex;
-  gap: 14px;
-  justify-content: center;
-  margin-bottom: 80px;
-}
-/* начался слайдер */
-/* .swiper {
-  width: 320px;
-  height: 600px;
-  background-color: transparent;
-  margin-bottom: 17px;
-}
-.swiper-slide {
-}
-.swiper-button-next,
-.swiper-button-prev {
+
+.but-yahts-slaid {
   height: 36px;
   width: 46px;
   border: #f6f5ef 1px solid;
   border-radius: 60px;
   background-color: transparent;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-/*}
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  display: none;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  transform: translateY(220px);
-  margin-left: 95px;
-  margin-right: 95px;
-}
-.swiper-backface-hidden .swiper-slide {
-  background-color: rgb(231, 130, 130);
-}
-.swiper-button-next svg,
-.swiper-button-prev svg {
-  width: 18px;
-  height: 8px;
-} */
-
-/* слайдер */
-html,
-body {
-  /* position: relative;
-  height: 100%; */
-}
-
-body {
-  /* background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0; */
-}
-
-swiper-container {
-  /* width: 354px;
-  height: 508px; */
-}
-
-swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #ce8686;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
 }
 
-swiper-slide img {
-  display: block;
-  /* object-fit: cover; */
-}
-
-swiper-container {
+.swiper {
   width: 300px;
   height: 508px;
-  margin: 164px auto;
-}
-
-/* .append-buttons {
-  text-align: center;
-  margin-top: 20px;
-} */
-
-/* .append-buttons button {
-  display: inline-block;
-  cursor: pointer;
-  border: 1px solid #8b19c0;
-  color: #22e663;
-  text-decoration: none;
-  padding: 4px 10px;
-  border-radius: 4px;
-  margin: 0 10px;
-  font-size: 13px;
-} */
-/* моя адаптация*/
-.element.style {
-  min-width: 354px;
-  margin-right: 16px;
-}
-:root {
-  --swiper-navigation-size: 10px;
-}
-
-.mySwiperYacht {
-  position: relative;
-}
-.swiper-button-prev element.style {
-  display: block;
-  left: 120px;
-}
-.swiper-button-next,
-.swiper-button-prev {
-  offset-position: 0;
-  position: sticky;
-  transform: translateX(22px);
-  min-height: 36px;
-  min-width: 46px;
-  border: #f6f5ef 1px solid;
-  border-radius: 60px;
   background-color: transparent;
-}
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  display: none;
-}
-.swiper-button-next svg,
-.swiper-button-prev svg {
-  color: aqua;
+  right: 0;
+  margin: 0;
 }
 @media only screen and (min-width: 375px) {
-  .swiper-container {
+  .swiper {
     width: 335px;
-    height: 508px;
-    margin: 164px auto;
   }
 }
+
 @media only screen and (min-width: 768px) {
-  .swiper-container {
+  .swiper {
     width: 704px;
-    height: 508px;
-    margin: 164px auto;
   }
 }
+
 @media only screen and (min-width: 1280px) {
-  .swiper-container {
+  .swiper {
     width: 1094px;
-    height: 508px;
-    margin: 164px auto;
   }
 }
+
+.swiper-backface-hidden .swiper-slide {
+}
+
+.image-slider .swiper-slide {
+  width: auto;
+}
+
+/**
+
+    |============================
+    | End of Yachts section
+    |============================
+  */
